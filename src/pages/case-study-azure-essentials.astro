@@ -1,0 +1,214 @@
+---
+import media1 from '../media/work/azure-essentials.png';
+import media2 from '../media/case-studies/azure-essentials/lockup-dark.png';
+import media3 from '../media/case-studies/azure-essentials/lockup-light.png';
+import media4 from '../media/case-studies/azure-essentials/thumbnail.png';
+import media5 from '../media/case-studies/azure-essentials/video-opening-frame.png';
+import media6 from '../media/case-studies/azure-essentials/event-style-guide.png';
+import media7 from '../media/case-studies/azure-essentials/email-banner-1.png';
+import media8 from '../media/case-studies/azure-essentials/email-banner-2.png';
+import media9 from '../media/case-studies/azure-essentials/identity-showcase.gif';
+import media10 from '../media/case-studies/azure-essentials/event-style-guide-animated.gif';
+import media11 from '../media/case-studies/azure-essentials/resource-kit-update.gif';
+import Layout from '../layouts/Layout.astro';
+import CTASection from '../components/CTASection.astro';
+
+const heroImage = media1.src;
+
+const meta = [
+  { label: 'Company', value: 'Microsoft' },
+  { label: 'Asset types', value: 'Video, eBook, presentation, illustration' },
+  { label: 'Services used', value: 'Brand strategy, digital marketing, content marketing, social media marketing, video marketing, graphic design, event marketing' },
+];
+
+// Nearly every Azure-Essentials-specific still image in the manifest
+// that's already committed here (excludes the separate "Azure Socials"
+// and "Azure Essentials Show" projects, which are different Work-page
+// items, not this campaign).
+const gallery = [
+  { src: media2.src, alt: 'Azure Essentials dark brand lockup', caption: 'Visual identity: dark brand lockup' },
+  { src: media3.src, alt: 'Azure Essentials light brand lockup', caption: 'Visual identity: light brand lockup' },
+  { src: media4.src, alt: 'Azure Essentials campaign thumbnail artwork', caption: 'Visual identity: campaign thumbnail' },
+  { src: media5.src, alt: 'Opening frame from the Azure Essentials intro video', caption: 'Video production: intro video opening frame' },
+  { src: media6.src, alt: 'Azure Essentials Tech Accelerator event style guide', caption: 'Event materials: Tech Accelerator style guide' },
+  { src: media7.src, alt: 'Azure Essentials email banner, version one', caption: 'Email marketing: banner v1' },
+  { src: media8.src, alt: 'Azure Essentials email banner, version two', caption: 'Email marketing: banner v2' },
+];
+
+// Animated assets, pulled out into their own section to build for
+// motion wherever the campaign actually had it.
+const motion = [
+  { src: media9.src, alt: 'Animated Azure Essentials identity showcase', caption: 'Visual identity: animated showcase' },
+  { src: media10.src, alt: 'Animated Azure Essentials Tech Accelerator event style guide', caption: 'Event materials: animated style guide' },
+  { src: media11.src, alt: 'Animated Azure Essentials resource kit design update', caption: 'Resource kit: design update' },
+];
+
+// Campaign videos, embedded directly rather than linked out.
+const videos = [
+  { src: `${import.meta.env.BASE_URL}media/video/azure-essentials-intro.mp4`, caption: 'Intro video: introducing Azure Essentials' },
+  { src: `${import.meta.env.BASE_URL}media/video/azure-essentials-customer-presentation.mp4`, caption: 'Customer-facing presentation video' },
+];
+---
+<Layout title="Azure Essentials" description="How Red Door Collaborative built the Azure Essentials brand identity and marketing suite for Microsoft.">
+  <section class="hero tight">
+    <div class="container">
+      <span class="eyebrow">Case study &middot; Microsoft</span>
+      <h1>Azure Essentials.</h1>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="container">
+      <img src={heroImage} alt="Isometric illustration of the Azure Essentials cloud identity, representing FinOps, governance, and platform tooling" class="case-hero-image" width="900" height="900" loading="eager" />
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="container">
+      <div class="grid grid-3">
+        {meta.map((m) => (
+          <div class="card">
+            <h3>{m.label}</h3>
+            <p>{m.value}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <span class="eyebrow">It starts with a need</span>
+      <h2>Reimagining how a new Azure offering is presented and marketed.</h2>
+      <p>Microsoft approached us to reimagine a way to present and market a new offering from Azure.</p>
+      <p>Without an official name, they needed us to develop a brand identity and language that reflected the current Azure style, while also introducing a fresh, distinctive visual vibe for their new offering.</p>
+      <p>With tight deadlines, multiple stakeholders, and numerous departments, Microsoft needed an agency that could learn existing guidelines and create something bold and compelling.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <span class="eyebrow">That we shape into a solution</span>
+      <h2>Becoming an extension of the internal team.</h2>
+      <p>From the beginning, we were more than just an agency&mdash;we were an extension of their internal team, shaping the identity of what became Azure Essentials (AE). We developed the design, refined the messaging, and created a suite of marketing and communication assets that established AE as a distinct, yet integral, part of Azure.</p>
+      <div class="grid grid-2" style="margin-top: 2rem;">
+        <div class="card">
+          <h3>Visual identity and branding</h3>
+          <p>While Microsoft provided the name, we built the Azure Essentials visual brand. We introduced a new color gradient beyond standard Azure templates, giving AE a unique yet recognizable presence within the broader Azure ecosystem.</p>
+        </div>
+        <div class="card">
+          <h3>Video production</h3>
+          <p>Our team worked closely with stakeholders to script, design, and produce both internal and external videos that introduced AE and explained its value to customers.</p>
+        </div>
+        <div class="card">
+          <h3>Presentation and communication assets</h3>
+          <p>We created and rebranded internal informational decks and external customer-facing guidance decks, ensuring clarity and consistency.</p>
+        </div>
+        <div class="card">
+          <h3>Event and marketing materials</h3>
+          <p>To support launch events, we developed event visuals, email banners, and social media assets to make sure that AE had a strong and consistent presence.</p>
+        </div>
+        <div class="card">
+          <h3>Editorial services</h3>
+          <p>Leveraging our design work, we created e-books and blog content that communicated AE's value to customers.</p>
+        </div>
+      </div>
+      <p style="margin-top: 2rem;">Unlike traditional agencies, we functioned as an internal partner with Microsoft, collaborating with Microsoft to anticipate problems, brainstorm solutions, and develop fresh marketing solutions that spoke their brand language.</p>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="container">
+      <span class="eyebrow">Selected assets</span>
+      <h2>A closer look at the work.</h2>
+      <div class="grid grid-3" style="margin-top: 2rem;">
+        {gallery.map((g) => (
+          <figure class="asset-card">
+            <img src={g.src} alt={g.alt} loading="lazy" />
+            <figcaption>{g.caption}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="container">
+      <span class="eyebrow">Built for motion</span>
+      <h2>Animation, in the brand's own language.</h2>
+      <div class="grid grid-3" style="margin-top: 2rem;">
+        {motion.map((g) => (
+          <figure class="asset-card">
+            <img src={g.src} alt={g.alt} loading="lazy" />
+            <figcaption>{g.caption}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="container">
+      <span class="eyebrow">See it in motion</span>
+      <h2>Campaign videos.</h2>
+      <div class="grid grid-2" style="margin-top: 2rem;">
+        {videos.map((v) => (
+          <figure class="asset-card video-card">
+            <video src={v.src} controls preload="none" poster={heroImage}></video>
+            <figcaption>{v.caption}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="container">
+      <blockquote class="quote">
+        We call it collaboration in action.
+      </blockquote>
+      <p class="quote-attribution">Our partnership with Microsoft Azure is an example of what makes us different. While other agencies struggle with rigid processes and cookie-cutter outcomes, we thrive in complexity. Our nimble, integrated approach means that every asset we create together &ndash; from videos to presentations to editorial content &ndash; aligns with your brand and vision.</p>
+      <p>For Microsoft, we weren't just an agency. We were a strategic partner, helping them bring a new vision to life. That's what great creative collaboration is all about.</p>
+    </div>
+  </section>
+
+  <CTASection heading="Let's collaborate." />
+</Layout>
+
+<style>
+  .case-hero-image {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 16px;
+  }
+
+  .asset-card {
+    margin: 0;
+    background: var(--color-bg-raised);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .asset-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+  .asset-card figcaption {
+    padding: 0.85rem 1rem;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+  }
+
+  .video-card video {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    background: #000;
+  }
+</style>
