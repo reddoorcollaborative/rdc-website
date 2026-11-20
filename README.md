@@ -3,7 +3,7 @@
 Staging rebuild of reddoorcollaborative.com, built with [Astro](https://astro.build) and deployed to GitHub Pages. Production stays on Squarespace for now. The RDC design system (the org default design system in Claude) governs colors, type, logo, and components.
 
 - Preview: https://reddoorcollaborative.github.io/rdc-website/
-- This repo is private. The published site is public.
+- This repo and the published site are both public.
 
 ## Rules
 
